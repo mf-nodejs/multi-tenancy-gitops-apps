@@ -3,7 +3,7 @@ kind: Pipeline
 metadata:
   name: sample-app-dev
   annotations:
-    app.openshift.io/runtime: tp-sample-app
+    app.openshift.io/runtime: sample-app
 spec:
   params:
     - name: git-url
@@ -19,7 +19,7 @@ spec:
       default: dev
     - name: app-path
       description: Path in gitops repo
-      default: tp-sample-app/environments
+      default: sample-app/environments
     - name: security
       description: Enable security for queueManager
       default: "false"

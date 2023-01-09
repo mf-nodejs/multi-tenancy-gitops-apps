@@ -6,11 +6,11 @@ if [[ -z ${GIT_ORG} ]]; then
   exit 1
 fi
 
-GIT_BRANCH_TP=${GIT_BRANCH_TP:-master}
+GIT_BRANCH=${GIT_BRANCH:-master}
 #GIT_BRANCH_USPS=${GIT_BRANCH_USPS:-master}
 
 # Create Kubernetes Secret yaml
 ( echo "cat <<EOF" ; cat cntk-event-listener.yaml_template ) | \
 GIT_ORG=${GIT_ORG} \
-GIT_BRANCH_TP=${GIT_BRANCH_TP:-master} \
+GIT_BRANCH=${GIT_BRANCH:-master} \
 sh > cntk-event-listener.yaml

@@ -1,0 +1,20 @@
+apiVersion: triggers.tekton.dev/v1alpha1
+kind: EventListener
+metadata:
+  labels:
+    app: cnkt-event-listener
+  name: cnkt-event-listener
+spec:
+  serviceAccountName: pipeline
+  triggers:
+  - name: tp-sample-app-dev
+    interceptors:
+      - ref:
+          name: "cel"
+        params:
+        - name: "filter"
+          value: "header.match('X-GitHub-Event', 'push') && body.ref == 'refs/heads/${GIT_BRANCH_TP}' && body.repository.full_name == '${GIT_ORG}/tp-sample-app'"
+    bindings:
+      - ref: cnkt-trigger-binding
+    template:
+      ref: tp-sample-app

@@ -1,0 +1,16 @@
+---
+# Source: sample-app/templates/route.yaml
+kind: Route
+apiVersion: route.openshift.io/v1
+metadata:
+  name: sample-app
+  annotations:
+    argocd.argoproj.io/sync-options: Validate=false
+spec:
+  to:
+    kind: Service
+    name: sample-app
+    weight: 100
+  tls:
+    termination: edge
+  wildcardPolicy: None

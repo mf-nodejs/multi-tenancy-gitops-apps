@@ -1,0 +1,5 @@
+resources:
+ #- ../../base
+ - sample-app/deployment.yaml
+ - sample-app/service.yaml
+ - sample-app/route.yaml

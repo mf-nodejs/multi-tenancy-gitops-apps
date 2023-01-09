@@ -1,0 +1,23 @@
+---
+# Source: mq-infra/templates/qm-template.yaml
+apiVersion: mq.ibm.com/v1beta1
+kind: sample-app
+metadata:
+  name: sample-app
+  annotations:
+    argocd.argoproj.io/sync-wave: "300"
+    helm.sh/hook-weight: "300"
+spec:
+  license:
+    accept: true
+    license: LICENSE VALUE
+    use: NonProduction
+  queueManager:
+    name: sample-app
+    mqsc:
+    - configMap:
+        name: sample-app-configmap
+        items:
+        - config.mqsc
+  web:
+    enabled: true

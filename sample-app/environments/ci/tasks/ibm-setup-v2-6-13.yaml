@@ -35,7 +35,7 @@ spec:
       default: ""
     - name: image-release
       description: The url of final released image
-      default: "quay.io/francinenguimdo"
+      default: ""
     - name: app-namespace
       description: The openshift/kubernetes namespace to deploy dev app
       default: ""

@@ -14,7 +14,7 @@ spec:
   - apiVersion: tekton.dev/v1beta1
     kind: PipelineRun
     metadata:
-      generateName:  tp-sample-app-
+      generateName: sample-app-
     spec:
       params:
       - name: git-url

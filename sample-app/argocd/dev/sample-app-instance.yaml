@@ -12,7 +12,7 @@ spec:
     server: https://kubernetes.default.svc
   project: applications
   source:
-    path: sample-app/environments/tp-sample-app/overlays/dev
+    path: sample-app/environments/sample-app/overlays/dev
     repoURL: https://github.com/mf-nodejs/multi-tenancy-gitops-apps.git
     targetRevision: master
   # helm:

@@ -17,7 +17,7 @@ spec:
     - name: source-dir
       default: /source
     - name: image-server
-      default: "quay.io/francinenguimdo"
+      default: ""
     - name: image-namespace
       default: ""
     - name: image-repository

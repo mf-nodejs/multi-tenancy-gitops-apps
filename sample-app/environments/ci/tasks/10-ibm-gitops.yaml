@@ -21,7 +21,7 @@ spec:
     - name: image-namespace
       default: ""
     - name: image-repository
-      default: "sample-app"
+      default: ""
     - name: image-tag
       default: ""
     - name: app-name

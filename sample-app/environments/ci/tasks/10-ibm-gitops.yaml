@@ -296,7 +296,7 @@ spec:
           set -x
           cd gitops_cd
 
-          SOURCE_DIR="../yamls/${SUBDIR}/templates"
+          SOURCE_DIR="../yamls/${SUBDIR}/chart/base/templates"
 
           if [[ ! -z "$(params.app-path)/${SUBDIR}/overlays/$(params.environment)/${SUBDIR}" ]]; then
             rm -rf "$(params.app-path)/${SUBDIR}/overlays/$(params.environment)/${SUBDIR}/*"

@@ -20,7 +20,7 @@ resources:
 # - roles/custom-prod-pipeline-sa-rolebinding.yaml
 - routes/cntk-route.yaml
 #- routes/tp-sample-app-dev.yaml
-#- secrets/artifactory-access-secret.yaml
+- secrets/artifactory-access-secret.yaml
 - secrets/git-credentials-secret.yaml
 - secrets/ibm-entitled-registry-credentials-secret.yaml
 #- secrets/mq-client-jks-password-secret.yaml

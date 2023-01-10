@@ -146,7 +146,7 @@ spec:
         - name: source-dir
           value: "$(tasks.setup.results.source-dir)"
         - name: image-server
-          value: ""
+          value: "$(tasks.setup.results.image-server)"
         - name: image-namespace
           value: "$(tasks.setup.results.image-namespace)"
         - name: image-repository

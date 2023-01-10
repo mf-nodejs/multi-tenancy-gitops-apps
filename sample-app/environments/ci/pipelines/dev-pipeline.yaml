@@ -137,7 +137,7 @@ spec:
       taskRef:
         name: ibm-helm-release-v2-6-13
       runAfter:
-        - img-scan
+        - helm-release
       params:
         - name: git-url
           value: "$(tasks.setup.results.git-url)"

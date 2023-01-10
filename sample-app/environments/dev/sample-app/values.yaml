@@ -1,0 +1,3 @@
+global: {}
+sample-app:
+  replicaCount: 1

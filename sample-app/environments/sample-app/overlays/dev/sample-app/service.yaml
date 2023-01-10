@@ -6,7 +6,7 @@ metadata:
   name: sample-app
   labels:
     app.kubernetes.io/name: sample-app
-    helm.sh/chart: sample-app-1.0.0-rc0.0.2
+    helm.sh/chart: sample-app-1.0.0-rc0.0.3
     app.kubernetes.io/instance: sample-app
     app: sample-app
 spec:

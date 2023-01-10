@@ -9,7 +9,7 @@ resources:
 #- pipelines/mq-metric-samples-dev-pipeline.yaml
 #- pipelines/ibm-test-pipeline-for-dev.yaml
 #- pipelines/ibm-test-pipeline-for-stage.yaml
-- pipelines/dev-pipeline.yaml
+#- pipelines/dev-pipeline.yaml
 - pipelines/sample-app-pipeline-dev.yaml
 #- pipelines/mq-spring-app-dev-pipeline.yaml
 # - roles/custom-pipeline-sa-clusterrole.yaml
@@ -20,12 +20,12 @@ resources:
 # - roles/custom-prod-pipeline-sa-rolebinding.yaml
 - routes/cntk-route.yaml
 #- routes/tp-sample-app-dev.yaml
-- secrets/artifactory-access-secret.yaml
+#- secrets/artifactory-access-secret.yaml
 - secrets/git-credentials-secret.yaml
 - secrets/ibm-entitled-registry-credentials-secret.yaml
 #- secrets/mq-client-jks-password-secret.yaml
-- tasks/10-gitops.yaml
-#- tasks/10-ibm-gitops.yaml
+#- tasks/10-gitops.yaml
+- tasks/10-ibm-gitops.yaml
 - tasks/10-gitops-promotion.yaml
 - tasks/11-app-name.yaml
 - tasks/12-functional-tests.yaml
